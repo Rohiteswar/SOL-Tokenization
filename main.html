@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AirDrop Token$</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 200px;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            border: 2px solid black;
+            border-radius: 15px;
+            width: 500px;
+            padding: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            transition: border-color 0.3s;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white; 
+            border: 2px solid black;
+            border-radius: 70px;
+            padding: 10px 20px; 
+            margin-top: 10px;
+            margin-left: 10px;
+            cursor: pointer; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <script>
+
+        const body = document.body;
+
+
+        const textElement = document.createElement("p");
+        textElement.textContent = "AirDropping My Tokens to Everyone on Earth! - RohitEswar";
+
+        const video = document.createElement("video");
+        video.src = "Sources/Bitcoin.mp4";
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = true;
+        video.style.width = "100%";
+        video.style.height = "100%";
+        video.style.position = "fixed";
+        video.style.top = "0";
+        video.style.left = "0";
+        video.style.objectFit = "cover";
+        video.style.zIndex = "-1";
+        
+
+        const input1 = document.createElement("input");
+        input1.type = "text";
+        input1.placeholder = "Enter Solana account address";
+
+        const textElement2 = document.createElement("p");
+        textElement2.textContent = "Select Network";
+
+        const button1 = document.createElement("button");
+        button1.textContent = "TESTNET";
+
+        const button2 = document.createElement("button");
+        button2.textContent = "DEVNET";
+
+
+        body.appendChild(textElement);
+        body.appendChild(input1);
+        body.appendChild(button1);
+        body.appendChild(button2);
+        body.appendChild(video);
+    </script>
+</body>
+</html>
